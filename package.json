@@ -1,0 +1,17 @@
+{
+  "name": "eleventy-plugin-asciidoc-tester",
+  "version": "1.0.0",
+  "description": "This is a project to try out eleventy-plugin-asciidoc for Eleventy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Saneef Ansari <hello@saneef.com> (https://saneef.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0-beta.10",
+    "eleventy-plugin-asciidoc": "^1.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
