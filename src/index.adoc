@@ -12,3 +12,12 @@ A preface about https://asciidoc.org[AsciiDoc].
 
 [source,ruby]
 puts "Hello, World!"
+
+== Second Section
+
+[source,html]
+----
+<body>
+  <p>This is some HTML</p>
+</body>
+----

@@ -4,8 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
+
+  <!-- Add Prism.js CSS files -->
+  <!-- You can pick other themes from https://cdnjs.com/libraries/prism -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism.min.css" />
 </head>
 <body>
   {% block content %}{{ content | safe }}{% endblock %}
+
+  <!-- Add Prism.js JavaScript files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>
