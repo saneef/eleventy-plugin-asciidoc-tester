@@ -3,5 +3,6 @@ permalink: /hello-world/
 layout: base.njk
 ---
 = Hello World
+:keywords: keyword1 keyword2
 
 Hello everyone!
