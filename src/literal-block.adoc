@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+= Testing Literal Block
+
+.A Literal Block
+[literal]
+....
+A very long line of text to test if 'nowrap' syntax on literal block is handled by JavaScript template code.
+....
+
+[literal%nowrap]
+....
+A very long line of text to test if 'nowrap' syntax on literal block is handled by JavaScript template code.
+....
+
+[literal,role=a-role]
+....
+A very long line of text to test if 'nowrap' syntax on literal block is handled by JavaScript template code.
+....
