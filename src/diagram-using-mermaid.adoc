@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+= Use Mermaid to generate diagrams
+
+You should see a flow chart generated using https://mermaid.js.org/[Mermaid.js].
+
+[literal,subs="none",role=mermaid]
+----
+flowchart LR
+    A[Hard] -->|Text| B(Round)
+    B --> C{Decision}
+    C -->|One| D[Result 1]
+    C -->|Two| E[Result 2]
+----
+
+Above flowchart is generated from the following markup.
+
+[source,mermaid]
+----
+flowchart LR
+    A[Hard] -->|Text| B(Round)
+    B --> C{Decision}
+    C -->|One| D[Result 1]
+    C -->|Two| E[Result 2]
+----
