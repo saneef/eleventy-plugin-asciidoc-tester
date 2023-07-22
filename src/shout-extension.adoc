@@ -1,0 +1,8 @@
+---
+permalink: /extension/
+layout: base.njk
+---
+= Shout extension
+
+[shout]
+If it all works, this text should be in upper case.

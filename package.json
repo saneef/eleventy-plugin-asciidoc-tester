@@ -17,5 +17,8 @@
     "ava": "^5.3.1",
     "eleventy-plugin-asciidoc": "^3.0.1",
     "rimraf": "^5.0.1"
+  },
+  "devDependencies": {
+    "asciidoctor": "^2.2.6"
   }
 }
