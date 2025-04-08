@@ -1,5 +1,14 @@
 ---
 layout: base.njk
+pagination:
+  data: testdata
+  size: 1
+  alias: wow
+testdata:
+  - page-0
+  - page-1
+  - page-2
+permalink: "{{ wow }}.html"
 ---
 = Testing Literal Block
 

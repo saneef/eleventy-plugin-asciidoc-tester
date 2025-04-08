@@ -12,10 +12,10 @@
   "author": "Saneef Ansari <hello@saneef.com> (https://saneef.com/)",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "ava": "^5.3.1",
-    "eleventy-plugin-asciidoc": "^4.0.1",
+    "eleventy-plugin-asciidoc": "file:../eleventy-plugin-asciidoc",
     "rimraf": "^5.0.1"
   }
 }

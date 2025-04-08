@@ -7,7 +7,7 @@ const indexData = fs.readFileSync(indexFilePath, "utf8");
 
 const permaLinkedFilePath = path.resolve(
   __dirname,
-  "../dist/hello-world/index.html"
+  "../dist/doc/doc-attributes/index.html",
 );
 const permaLinkedData = fs.readFileSync(permaLinkedFilePath, "utf8");
 
@@ -40,5 +40,5 @@ test("Permalink in front matter is processed", async (t) => {
 
   const title = res?.groups?.["title"];
 
-  t.is(title, "Hello World");
+  t.is(title, "AsciiDoc attributes");
 });

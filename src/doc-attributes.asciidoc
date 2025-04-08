@@ -1,0 +1,7 @@
+:eleventy-permalinkslug: doc-attributes
+:eleventy-permalink: /doc/{{ permalinkslug }}/
+:eleventy-layout: base.njk
+
+= AsciiDoc attributes
+
+This page uses AsciiDoc attributes as front matter.
