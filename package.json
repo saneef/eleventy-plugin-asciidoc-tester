@@ -15,7 +15,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "ava": "^5.3.1",
-    "eleventy-plugin-asciidoc": "file:../eleventy-plugin-asciidoc",
+    "eleventy-plugin-asciidoc": "^5.1.0",
     "rimraf": "^5.0.1"
   }
 }
