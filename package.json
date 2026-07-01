@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is a project to try out eleventy-plugin-asciidoc for Eleventy.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "eleventy --quiet",
@@ -12,10 +13,10 @@
   "author": "Saneef Ansari <hello@saneef.com> (https://saneef.com/)",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "ava": "^5.3.1",
-    "eleventy-plugin-asciidoc": "^5.1.0",
-    "rimraf": "^5.0.1"
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "ava": "^8.0.1",
+    "eleventy-plugin-asciidoc": "^6.0.0",
+    "rimraf": "^6.1.3"
   }
 }

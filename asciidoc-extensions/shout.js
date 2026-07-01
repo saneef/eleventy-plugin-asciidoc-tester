@@ -8,7 +8,7 @@ function shout() {
   });
 }
 
-function register(registry) {
+export function register(registry) {
   if (typeof registry.register === "function") {
     registry.register(function () {
       this.block(shout);
@@ -18,5 +18,3 @@ function register(registry) {
   }
   return registry;
 }
-
-module.exports = { register };
