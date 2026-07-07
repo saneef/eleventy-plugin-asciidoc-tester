@@ -1,15 +1,16 @@
 import eleventyAsciidoc from "eleventy-plugin-asciidoc";
-import { shout } from "./asciidoc-extensions/shout.js";
+import asciidoctorKroki from "asciidoctor-kroki";
 import { Extensions } from "@asciidoctor/core";
-
 import { fileURLToPath } from "url";
 import { dirname } from "path";
+import { shout } from "./asciidoc-extensions/shout.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const registry = Extensions.create();
 registry.block(shout);
+asciidoctorKroki.register(registry);
 
 export default function async(eleventyConfig) {
   // Opts out for ignore using .gitIgnore
@@ -18,8 +19,12 @@ export default function async(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPlugin(eleventyAsciidoc, {
+    safe: "unsafe",
     template_dir: `${__dirname}/asciidoc-templates`,
     extension_registry: registry,
+    attributes: {
+      "kroki-fetch-diagram": true,
+    },
   });
 
   return {
