@@ -1,4 +1,4 @@
-function shout() {
+export function shout() {
   const self = this;
   self.named("shout");
   self.onContext("paragraph");
@@ -6,15 +6,4 @@ function shout() {
     const lines = reader.getLines().map((l) => l.toUpperCase());
     return self.createBlock(parent, "paragraph", lines);
   });
-}
-
-export function register(registry) {
-  if (typeof registry.register === "function") {
-    registry.register(function () {
-      this.block(shout);
-    });
-  } else if (typeof registry.block === "function") {
-    registry.block(shout);
-  }
-  return registry;
 }

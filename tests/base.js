@@ -1,6 +1,10 @@
-const path = require("path");
-const fs = require("fs");
-const test = require("ava").default;
+import path from "path";
+import fs from "fs";
+import { fileURLToPath } from "url";
+import test from "ava";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const indexFilePath = path.resolve(__dirname, "../dist/index.html");
 const indexData = fs.readFileSync(indexFilePath, "utf8");
